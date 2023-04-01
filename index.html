@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="faviconpasapalabra.png">
+  </head>
+  <body>
+<div class="all">
+    <div class="time">300</div>
+    <div class="puntos">0</div>
+    <div class="rosco">
+        <div class="texto-dentro">
+            <div class="corr-incorr">Player!</div>
+            <div class="palabra-actual">Bienvenido a Pasapalabra!</div>
+        </div>
+        <div class="letter a">A</div>
+        <div class="letter z">Z</div>
+        <div class="letter y">Y</div>
+        <div class="letter x">X</div>
+        <div class="letter v">V</div>
+        <div class="letter u">U</div>
+        <div class="letter t">T</div>
+        <div class="letter s">S</div>
+        <div class="letter r">R</div>
+        <div class="letter q">Q</div>
+        <div class="letter p">P</div>
+        <div class="letter o">O</div>
+        <div class="letter ñ">Ñ</div>                      
+        <div class="letter b">B</div>
+        <div class="letter c">C</div>
+        <div class="letter d">D</div>
+        <div class="letter e">E</div>
+        <div class="letter f">F</div>
+        <div class="letter g">G</div>
+        <div class="letter h">H</div>
+        <div class="letter i">I</div>
+        <div class="letter j">J</div>
+        <div class="letter l">L</div>
+        <div class="letter m">M</div>
+        <div class="letter n">N</div>
+    </div>
+    <div class="mini-caja">&nbsp;</div>
+    <div class="caja">
+        <p class="pregunta">
+            Buenas jugador! Pulsa Start para jugar el pasapalabra!
+        </p>
+        <button id="start" onclick="alternarFuncion()">Start</button>
+        <form onsubmit="alternarFuncion2()">
+            <label for="palabra"></label>
+            <input type="text" id="palabra" name="palabra">
+            <button type="submit" class="submit">Submit</button>
+        </form>
+        <button class="pasapalabra" onclick="pasapalabra=true; answerQuestion()">Pasapalabra</button>
+    </div>
+</div>
+    
+<script src="project.js"></script>
+</body>
+</html>
